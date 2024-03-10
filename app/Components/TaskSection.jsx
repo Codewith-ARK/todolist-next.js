@@ -9,7 +9,7 @@ export default function TaskSection() {
   const { tasks, completedTasks } = useContext(TasksContext);
 
   return (
-    <div>
+    <div >
       {/* Today's Task */}
       <SectionHeading text="Today's Task" />
       <section id="task">
@@ -23,17 +23,17 @@ export default function TaskSection() {
       </section>
 
       {/* Completed Task */}
-      {completedTasks.length === 0 ? "" : <SectionHeading text="Completed Task" />}
+      {/* <SectionHeading text="Completed Task" />
       <section id="completedTask">
         <ul className='flex flex-col gap-2'>
           {
             completedTasks.map((task, key) => {
+              console.log(task)
               return <TaskCompleted task={task} key={key} />
             })
           }
         </ul>
-      </section>
-
+      </section> */}
     </div>
   )
 }

@@ -21,7 +21,7 @@ export default function Time() {
 
   return (
     <div
-      className="bg-black rounded-lg flex justify-center items-center text-white text-7xl">
+      className="bg-black rounded-lg flex justify-center items-center text-white text-4xl md:text-6xl">
         {time}
     </div>
   )

@@ -16,7 +16,7 @@ export default function AddTaskSection() {
 
 
   return (
-    <form onSubmit={submitHandler} className="flex flex-col gap-4">
+    <form onSubmit={submitHandler} className="flex flex-col gap-4 p-4 bg-white border border-[#BEBDBD] rounded-lg">
     <input
       type="text"
       placeholder="Enter task here"
@@ -24,6 +24,7 @@ export default function AddTaskSection() {
       value={title}
       onChange={element => setTitle(element.target.value)}
       autoFocus
+      required
     />
     {/* <input
       type="text"
