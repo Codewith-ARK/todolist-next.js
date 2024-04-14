@@ -22,14 +22,14 @@ export default function Task({ task, key }) {
 
   return (
     <li key={key} className="border rounded-lg px-2 py-4 border-gray-300 bg-white">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center gap-3">
         <FiCircle
-          className=" text-2xl aspect-square cursor-pointer"
+          className=" text-2xl aspect-square cursor-pointer hover:opacity-60"
           onClick={() => completeTask(key)}
         />
-        <p className="text-sm">{task.title}</p>
+        <p className="text-sm grow">{task.title}</p>
         <FiTrash2
-          className="text-2xl text-red-500 cursor-pointer"
+          className="text-2xl text-red-500 cursor-pointer hover:opacity-60"
           title="Delete Task"
           onClick={deleteTask}
         />

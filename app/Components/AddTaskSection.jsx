@@ -20,7 +20,7 @@ export default function AddTaskSection() {
     <input
       type="text"
       placeholder="Enter task here"
-      className="text-base border-zinc-800 border p-2 rounded"
+      className="text-base border-[#BEBDBD] border p-2 rounded"
       value={title}
       onChange={element => setTitle(element.target.value)}
       autoFocus
